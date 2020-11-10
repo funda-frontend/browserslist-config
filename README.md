@@ -32,3 +32,9 @@ The current selection is based on [**> 0.30% in the Netherlands excluding iOS Sa
 Commiting to this repo without using the commandline is not tested.
 Whenever you want to make a commit you should just run `git commit` after you staged your changes.
 There are a bunch of checks to make sure you are commiting with a proper message.
+
+## Local configuration
+
+At the root of your project add a .browserslistrc file
+with the content ```extends @funda/browserslist-config```
+
