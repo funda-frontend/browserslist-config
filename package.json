@@ -1,0 +1,39 @@
+{
+  "name": "@funda/browserslist-config",
+  "version": "1.0.0",
+  "description": "browserlist settings for frontend projects",
+  "main": "index.js",
+  "author": "funda",
+  "license": "MIT",
+  "repository": "github:funda-frontend/browserslist-config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "release": "semantic-release --ci",
+    "cm": "git-cz"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/npm": "^5.1.15",
+    "@semantic-release/release-notes-generator": "^7.3.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.9",
+    "semantic-release": "^15.13.27"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+}
