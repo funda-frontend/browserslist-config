@@ -1,6 +1,6 @@
 {
   "name": "@funda/browserslist-config",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "browserlist settings for frontend projects",
   "main": "index.js",
   "author": "funda",
