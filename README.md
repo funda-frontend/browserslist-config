@@ -4,37 +4,39 @@
 
 This package stores the default configuration for supported browsers for funda projects.
 
-The current selection is based on [**> 0.30% in the Netherlands excluding iOS Safari 8**](https://browserl.ist/?q=%3E+0.30%25+in+NL%2C+not+ios_saf+8). That results at the time of this selection (1/05/2019) in:
+**This projects uses [semantic-release](https://semantic-release.gitbook.io/semantic-release/).** Be meaningful of this when writing commits.
 
-* and_chr 73
-* and_uc 11.8
-* chrome 73
-* chrome 72
-* chrome 71
-* edge 18
-* edge 17
-* firefox 66
-* firefox 65
-* ie 11
-* ios_saf 12.0-12.1
-* ios_saf 11.3-11.4
-* ios_saf 11.0-11.2
+The current selection is based on **> 0.30% in the Netherlands excluding iOS Safari 9.3 and IE 11**. That results at the time of this selection (15/03/2021) in:
+
+* and_chr 89
+* and_ff 86
+* and_uc 12.12
+* chrome 88
+* chrome 87
+* edge 88
+* firefox 85
+* ios_saf 14.0-14.5
+* ios_saf 13.4-13.7
+* ios_saf 13.3
+* ios_saf 12.2-12.4
 * ios_saf 10.3
-* ios_saf 9.3
-* opera 58
-* safari 12
-* safari 11.1
-* samsung 8.2
-* samsung 9.2
+* safari 14
+* safari 13.1
+* samsung 13.0
 
-# This projects uses semantic-release
 
-Commiting to this repo without using the commandline is not tested.
-Whenever you want to make a commit you should just run `git commit` after you staged your changes.
-There are a bunch of checks to make sure you are commiting with a proper message.
+## Adding to a new project
 
-## Local configuration
+At the root of your project add a .browserslistrc:
 
-At the root of your project add a .browserslistrc file
-with the content ```extends @funda/browserslist-config```
+```
+extends @funda/browserslist-config
+```
+
+
+If you are updating an existing project don't forget to update your package `db`
+
+```
+npx browserslist@latest --update-db
+```
 
